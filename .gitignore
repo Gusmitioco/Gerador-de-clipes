@@ -1,0 +1,81 @@
+# ==========================================
+# 1. Segredos e Variáveis de Ambiente
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==========================================
+# 2. Python e Ambientes Virtuais
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# ==========================================
+# 3. Mídia, Vídeos, Áudios e Arquivos Pesados
+# ==========================================
+# Pastas de buffer (mantém estrutura com .gitkeep)
+entrada/*
+!entrada/.gitkeep
+
+saida/*/*
+!saida/**/.gitkeep
+!saida/*/.gitkeep
+!saida/.gitkeep
+
+# Arquivos de mídia brutos ou renderizados
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.webm
+*.flv
+*.ts
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.ogg
+*.flac
+*.srt
+*.ass
+*.vtt
+
+# Modelos do Faster-Whisper ou HuggingFace baixados localmente
+*.bin
+*.pt
+*.onnx
+
+# ==========================================
+# 4. Arquivos Temporários e Logs
+# ==========================================
+*.log
+*.tmp
+temp/
+scratch/
+downloads/
+
+# ==========================================
+# 5. IDEs e Sistema Operacional
+# ==========================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
