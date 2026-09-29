@@ -127,6 +127,22 @@ OPENROUTER_API_KEY=sua_chave_do_openrouter
 python testar_ias.py
 ```
 
+### 5. Execução do Pipeline Completo
+```bash
+# Exemplo 1: Gerar clipes da Conta 1 (Época de Ouro BR) a partir do YouTube
+python main.py --conta antigos --link "https://www.youtube.com/watch?v=exemplo"
+
+# Exemplo 2: Processar arquivo de vídeo local para Conta 2 (Curiosidades/Podcasts)
+python main.py --conta diversos --arquivo "entrada/meu_video.mp4"
+
+# Exemplo 3: Conta 3 (GTA 6) gerando até 2 clipes com Whisper small
+python main.py --conta gta6 --link "https://www.youtube.com/watch?v=exemplo" --max-clipes 2 --modelo-whisper small
+
+# Opções adicionais:
+# --somente-curadoria : Roda download + transcrição + IA sem renderizar o vídeo final
+# --sem-legenda       : Renderiza o clipe em 9:16 sem queimar as legendas
+```
+
 ---
 
 ## 7. 📋 Status Atual e Roadmap
@@ -135,9 +151,10 @@ python testar_ias.py
 - [x] Ambiente virtual isolado `venv/` com dependências essenciais instaladas (`faster-whisper`, `google-genai`, `openai`, `yt-dlp`, `python-dotenv`).
 - [x] Conexão com Google Gemini (`gemini-3.5-flash-lite`) e OpenRouter (Hermes 3) testada e funcional.
 - [x] Unificação da arquitetura, diretrizes de nicho e documentação técnica.
-- [ ] Criação do módulo `scripts/downloader.py` (download inteligente via `yt-dlp`).
-- [ ] Criação do módulo `scripts/transcritor.py` (transcrição local rápida com `faster-whisper`).
-- [ ] Criação do módulo `scripts/inteligencia.py` (seleção de momentos virais com output JSON estrito).
-- [ ] Criação dos arquivos de configuração por nicho em `config/`.
-- [ ] Criação do módulo `scripts/editor_ffmpeg.py` (filtros 9:16, blurred BG e queima de legendas).
-- [ ] Implementação do orquestrador `main.py` para execução de ponta a ponta.
+- [x] Criação do módulo `scripts/downloader.py` (download inteligente via `yt-dlp` e áudio 16kHz).
+- [x] Criação do módulo `scripts/transcritor.py` (transcrição local rápida com `faster-whisper` em int8 e word timestamps).
+- [x] Criação do módulo `scripts/inteligencia.py` (seleção de momentos virais com output JSON estrito via Gemini/Hermes).
+- [x] Criação dos arquivos de configuração por nicho em `config/` (`antigos`, `diversos`, `gta6`).
+- [x] Criação do módulo `scripts/editor_ffmpeg.py` (filtros 9:16, blurred BG e queima de legendas ASS dinâmicas).
+- [x] Implementação do orquestrador `main.py` para execução de ponta a ponta.
+

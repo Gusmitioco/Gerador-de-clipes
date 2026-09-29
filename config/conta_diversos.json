@@ -1,0 +1,44 @@
+{
+  "id_conta": "diversos",
+  "nome": "Conteúdos Diversos / Curiosidades / Histórias e Podcasts",
+  "pasta_saida": "saida/diversos",
+  "duracao_min_segundos": 30,
+  "duracao_max_segundos": 60,
+  "max_clipes": 3,
+  "layout": {
+    "tipo": "blurred_background",
+    "largura": 1080,
+    "altura": 1920,
+    "blur_sigma": 25
+  },
+  "legendas": {
+    "ativo": true,
+    "estilo": "karaoke",
+    "posicao": "centro",
+    "tamanho_fonte": 24,
+    "cor_primaria": "&H00FFFFFF",
+    "cor_secundaria": "&H0000FFFF",
+    "cor_borda": "&H00000000",
+    "espessura_borda": 3
+  },
+  "criterios_ia": {
+    "nicho": "Curiosidades intrigantes, ciência popular, histórias surpreendentes, casos misteriosos e trechos de alto impacto de podcasts",
+    "publico_alvo": "Pessoas buscando conhecimento rápido, fatos bizarros, reflexões profundas ou histórias envolventes no feed vertical.",
+    "gatilhos_corte": [
+      "Fatos chocantes ou estatísticas impressionantes",
+      "Perguntas que instigam a curiosidade logo de cara ('Você sabia que...', 'O que aconteceria se...')",
+      "Histórias pessoais com reviravolta ou lição marcante",
+      "Explicações fáceis sobre coisas complexas"
+    ],
+    "regras_gancho": "Gancho imediato nos primeiros 3 segundos criando uma pergunta mental ou revelando uma premissa surpreendente, mantendo a tensão até a resposta antes dos 60 segundos.",
+    "hashtags_padrao": [
+      "#curiosidades",
+      "#fatosdesconhecidos",
+      "#vocesabia",
+      "#podcastbr",
+      "#ciencia",
+      "#historias",
+      "#foryou"
+    ]
+  }
+}

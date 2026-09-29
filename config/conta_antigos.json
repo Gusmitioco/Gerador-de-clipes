@@ -1,0 +1,44 @@
+{
+  "id_conta": "antigos",
+  "nome": "Época de Ouro do YouTube BR (2010-2020)",
+  "pasta_saida": "saida/antigos",
+  "duracao_min_segundos": 20,
+  "duracao_max_segundos": 60,
+  "max_clipes": 3,
+  "layout": {
+    "tipo": "blurred_background",
+    "largura": 1080,
+    "altura": 1920,
+    "blur_sigma": 20
+  },
+  "legendas": {
+    "ativo": true,
+    "estilo": "karaoke",
+    "posicao": "centro",
+    "tamanho_fonte": 22,
+    "cor_primaria": "&H0000FFFF",
+    "cor_secundaria": "&H00FFFFFF",
+    "cor_borda": "&H00000000",
+    "espessura_borda": 3
+  },
+  "criterios_ia": {
+    "nicho": "Nostalgia e zoeira do YouTube Brasil (2010 a 2020)",
+    "publico_alvo": "Fãs de canais clássicos como Júlio Cocielo, Canal Canalha, Desimpedidos, Pânico, Bate ou Regaça, Porta dos Fundos, etc.",
+    "gatilhos_corte": [
+      "Momento cômico espontâneo ou risada incontrolável",
+      "Páginas icônicas de histórias ou micos contados",
+      "Frase de efeito marcante ou reviravolta engraçada",
+      "Desafio ou pegadinha com desfecho inesperado"
+    ],
+    "regras_gancho": "Os primeiros 3 segundos devem conter o pico de humor, uma frase absurda dita pelo convidado/apresentador ou a reação inicial mais forte.",
+    "hashtags_padrao": [
+      "#youtubebr",
+      "#nostalgia",
+      "#epocadeouro",
+      "#comedia",
+      "#humorbr",
+      "#memesbr",
+      "#foryou"
+    ]
+  }
+}

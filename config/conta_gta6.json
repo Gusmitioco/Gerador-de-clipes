@@ -1,0 +1,45 @@
+{
+  "id_conta": "gta6",
+  "nome": "GTA 6 e Hype de Games",
+  "pasta_saida": "saida/gta6",
+  "duracao_min_segundos": 20,
+  "duracao_max_segundos": 60,
+  "max_clipes": 3,
+  "layout": {
+    "tipo": "blurred_background",
+    "largura": 1080,
+    "altura": 1920,
+    "blur_sigma": 20
+  },
+  "legendas": {
+    "ativo": true,
+    "estilo": "karaoke",
+    "posicao": "centro",
+    "tamanho_fonte": 24,
+    "cor_primaria": "&H0000FFFF",
+    "cor_secundaria": "&H00FFFFFF",
+    "cor_borda": "&H00000000",
+    "espessura_borda": 3
+  },
+  "criterios_ia": {
+    "nicho": "Grand Theft Auto VI, novidades Rockstar Games, teorias, vazamentos confirmados, análises de trailer e gameplay",
+    "publico_alvo": "Comunidade gamer ansiosa pelo GTA 6 e novidades da indústria dos jogos.",
+    "gatilhos_corte": [
+      "Menção a segredos, detalhes despercebidos ou easter eggs",
+      "Física realista, gráficos de ponta ou IA inovadora de NPCs",
+      "Vazamentos validados ou declarações de desenvolvedores",
+      "Comparação do mapa, cidades (Vice City/Leonida) ou personagens (Jason e Lucia)",
+      "Termos gatilho: Rockstar, vazamento, detalhe, segredo, física, mapa, trailer, data de lançamento"
+    ],
+    "regras_gancho": "Gancho direto nos primeiros 3 segundos destacando um detalhe insano ou vazamento que a maioria das pessoas não reparou.",
+    "hashtags_padrao": [
+      "#gta6",
+      "#gta",
+      "#rockstargames",
+      "#gtavi",
+      "#gamesbrasil",
+      "#jogos",
+      "#hypegta6"
+    ]
+  }
+}
